@@ -1,0 +1,40 @@
+package javap;
+import java.util.Scanner;
+/*Take Input from the User
+*/
+public class javap  {
+	//public static HashMap<Character,Integer> countChar(String str) {
+		
+	//	return list;
+	//}
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the Word");
+		String str=sc.nextLine();
+		System.out.println(str);
+		
+		System.out.println("Enter the Number");
+		int n=sc.nextInt();
+		System.out.println(n);
+		
+		System.out.println("Enter the Character");
+		char c=sc.next().charAt(0);
+		System.out.println(c);
+		
+		
+
+		
+	}
+}
+/* Enter the Word
+praveen yadav
+praveen yadav
+Enter the Number
+5
+5
+Enter the Character
+h
+h
+ */
