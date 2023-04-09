@@ -1,0 +1,21 @@
+package javap;
+
+import java.util.*;
+import java.util.function.Consumer;
+
+/*Print the all ASCII key and value
+*/
+public class javap  {
+	public static void main(String args[]) {
+		for(int i=65;i<91;i++) {
+			char c=(char) i;
+			System.out.print(c+" ");
+			char C=(char) (i+34);
+			System.out.print(C+" ");
+		}
+	}
+		
+	}
+/* A c B d C e D f E g F h G i H j I k J l K m L n M o N p O q P r Q s R t S u T v U w V x W y X z Y { Z | 
+
+ */
