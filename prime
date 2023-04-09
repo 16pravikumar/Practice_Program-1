@@ -7,7 +7,7 @@ public class javap  {
 	public static String isPrime(int x) {
 		StringBuilder status=new StringBuilder();
 		int c=0;
-		for(int i=2;i<=x;i++) {
+		for(int i=2;i<=x/2;i++) {
 			if(x%i==0)
 				c++;
 		}if(c==1)
