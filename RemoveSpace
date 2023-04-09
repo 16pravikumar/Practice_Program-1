@@ -1,0 +1,28 @@
+package javap;
+import java.util.List;
+import java.util.TreeSet;
+
+/*Remove space
+*/
+public class javap  {
+	
+	
+	public static String removeSpace(String str) {
+		// Three way we can remove the space from the String
+		//String s = str.replaceAll(" ", "");
+		//String s = str.replace(" ", "");
+		String s = str.replaceAll("\\s", "");
+		return s;
+	}
+	public static void main(String[] args) {
+		
+		String str="I love India. I like my country";
+		//Reverse by word
+		System.out.println(removeSpace(str));
+		
+
+		
+	}
+}
+/* IloveIndia.Ilikemycountry
+ */
