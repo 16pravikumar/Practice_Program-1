@@ -1,0 +1,29 @@
+package javap;
+import java.util.HashMap;
+/*Count Character from the String
+*/
+public class javap  {
+	public static HashMap<Character,Integer> countChar(String str) {
+		HashMap<Character,Integer> list=new HashMap<>();
+		for(int i=0;i<str.length();i++) { int c=0;
+			for(int j=0;j<str.length();j++) {
+				if(str.charAt(i)==str.charAt(j))
+					c++;
+			}
+			if(!Character.isWhitespace(str.charAt(i)))
+			list.put(str.charAt(i), c);
+		}
+		return list;
+	}
+	public static void main(String[] args) {
+		
+		String str="I love India. I like my country";
+		//Reverse by word
+		System.out.println(countChar(str));
+		
+
+		
+	}
+}
+/* {a=1, c=1, d=1, e=2, I=3, i=2, k=1, l=2, m=1, n=2, .=1, o=2, r=1, t=1, u=1, v=1, y=2}
+ */
