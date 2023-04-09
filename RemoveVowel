@@ -1,0 +1,32 @@
+package javap;
+import java.util.List;
+import java.util.TreeSet;
+
+/*Remove Vowel
+*/
+public class javap  {
+	
+	
+	public static String removeVowel(String str) {
+		
+		String s = str.replaceAll("[AEIOUaeiou]", "");
+        
+		return s;
+	}
+	public static void main(String[] args) {
+		
+		String str="Engineering";
+		//Reverse by word
+		System.out.println(removeVowel(str));
+		//Replace Function
+		String str1 = "Hello, World!";
+		String newStr = str1.replaceAll("o", "e");
+
+		System.out.println(newStr); // Prints "Helle, Werld!"
+
+		
+	}
+}
+/* ngnrng
+Helle, Werld!
+ */
