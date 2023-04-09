@@ -1,0 +1,40 @@
+package javap;
+import java.util.Scanner;
+/*To check the integer,char or number from the user input
+*/
+public class javap  {
+	//public static HashMap<Character,Integer> countChar(String str) {
+		
+	//	return list;
+	//}
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the Word/Number/Character");
+		String str=sc.next();
+		if(str.length()>1) {int c=0;
+			for(int i=0;i<str.length();i++) {
+				if(Character.isDigit(str.charAt(i)))
+						c++;
+			     }
+			if(c==str.length()) {
+				int num=Integer.parseInt(str);
+				System.out.println("Hello ! This is your Number: "+num);
+			}else
+				System.out.print("Hello ! This is your Word: "+str);
+		}
+		else {
+			     char ch=str.charAt(0);
+			     if(Character.isLetter(ch))
+		       System.out.println("Hello ! This is your Single Character: "+ch);
+			     if(Character.isDigit(ch))
+      System.out.println("Hello ! This is your Single Digit Number: "+Character.getNumericValue(ch));
+			     
+		}
+	}
+}
+/* Enter the Word/Number/Character
+f
+Hello ! This is your Single Character: f
+ */
