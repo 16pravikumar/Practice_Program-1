@@ -1,0 +1,46 @@
+package javap;
+
+import java.util.*;
+import java.util.function.Consumer;
+
+/*Basic of HashMap
+*/
+public class javap  {
+	public static void main(String args[]) {
+		HashMap<String,Integer> map=new HashMap<>();
+		map.put("one", 1);
+		map.put("two", 2);
+		map.put("three", 3);
+		map.put("four", 4);
+		map.put("five", 5);
+		// Get the value from the Key
+		System.out.print(map.get("one"));
+		//Check the key and value in the map// it gives the return as boolean
+		System.out.print(map.containsKey("five"));
+		System.out.print(map.containsValue(4));
+		//Remove the Key
+		map.remove("one");
+		//All key and Values
+		System.out.println(map.keySet());
+		System.out.println(map.values());
+		//Print the all key
+		Set<String> keys = map.keySet();
+		for (String key : keys) {
+		    System.out.print(key + ": " + map.get(key));
+		}System.out.println();
+		//Print the all Values
+		Collection<Integer> values = map.values();
+		for (int value : values) {
+		    System.out.print(value);
+		}
+
+
+	}
+		
+	}
+/* 1truetrue[four, two, three, five]
+[4, 2, 3, 5]
+four: 4two: 2three: 3five: 5
+4235
+
+ */
