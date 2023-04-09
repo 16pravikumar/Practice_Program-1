@@ -1,0 +1,22 @@
+package javap;
+/*Factorial
+*/
+ 
+public class javap  {
+	
+	public static int getFact(int x) {
+		int res=1;
+		while(x>0) {
+			res=res*x;
+			x--;
+		}
+		return res;
+	}
+	public static void main(String[] args) {
+		
+		int x=5;
+		System.out.println(getFact(x));
+	}
+}
+/* 120
+ */
