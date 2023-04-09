@@ -1,0 +1,27 @@
+package javap;
+/*Prime Number
+*/
+ 
+public class javap  {
+	
+	public static String isPrime(int x) {
+		StringBuilder status=new StringBuilder();
+		int c=0;
+		for(int i=2;i<=x;i++) {
+			if(x%i==0)
+				c++;
+		}if(c==1)
+			status.append("prime");
+		else
+			status.append(x+" Number is not Prime Number");
+		String s=new String(status);
+		return s;
+	}
+	public static void main(String[] args) {
+		
+		int x=29;
+		System.out.println(isPrime(x));
+	}
+}
+/* prime
+ */
