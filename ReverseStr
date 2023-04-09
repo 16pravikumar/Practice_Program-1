@@ -1,0 +1,30 @@
+package javap;
+/*Reverse String
+*/
+public class javap  {
+	
+	public static String strRev(String str) {
+		String copy[]=str.split(" ");
+		StringBuilder s=new StringBuilder();
+		for(int i=copy.length-1;i>=0;i--)
+			s.append(copy[i]+" ");
+		return s.toString();
+	}
+	public static String strRevChar(String str) {
+		StringBuilder s=new StringBuilder();
+		for(int i=str.length()-1;i>=0;i--)
+			s.append(str.charAt(i));
+		return s.toString();
+	}
+	public static void main(String[] args) {
+		
+		String str="I love India";
+		//Reverse by word
+		System.out.println(strRev(str));
+		//Reverse by character
+		System.out.println(strRevChar(str));
+	}
+}
+/* India love I 
+   aidnI evol I
+ */
