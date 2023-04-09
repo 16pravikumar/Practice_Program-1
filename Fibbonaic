@@ -1,0 +1,33 @@
+package javap;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/*Fibonacci Series like 1 2 3 5 8 13
+*/
+ 
+public class javap  {
+	
+	public static List<Integer> toFibbo(int x) {
+		List<Integer> list=new ArrayList<Integer>();
+		int m1=1;
+		int m2=2;
+		int m3;
+		list.add(m1);
+		list.add(m2);
+		while(x>0) {
+			m3=m1+m2;
+		    m1=m2;
+			m2=m3;
+			x--;
+			list.add(m3);
+		} return list;
+	}
+	public static void main(String[] args) {
+		
+		int x=6;
+		System.out.println(toFibbo(x));
+	}
+}
+/* [1, 2, 3, 5, 8, 13, 21, 34]
+ */
