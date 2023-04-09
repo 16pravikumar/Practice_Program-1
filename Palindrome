@@ -1,0 +1,26 @@
+package javap;
+/*Palindrome Number
+*/
+ 
+public class javap  {
+	
+	public static String toCheck(int x) {
+		int res=0;
+		int c=x;
+		while(x>0) {
+			res=res*10+x%10;
+			x=x/10;
+		}
+		if(c==res)
+			return "Palindrome";
+		else
+		return c+" is not the Palindrome";
+	}
+	public static void main(String[] args) {
+		
+		int x=1221;
+		System.out.println(toCheck(x));
+	}
+}
+/* Palindrome
+ */
