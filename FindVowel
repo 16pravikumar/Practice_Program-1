@@ -1,0 +1,30 @@
+package javap;
+import java.util.List;
+import java.util.TreeSet;
+
+/*Find Vowel
+*/
+public class javap  {
+	
+	
+	public static TreeSet<Character> findVowel(String str) {
+		TreeSet<Character> s=new TreeSet<>();
+		String vowel="aeiou";
+		for(int i=0;i<str.length();i++) {
+             for(int j=0;j<vowel.length();j++) {
+				if(str.charAt(i)==vowel.charAt(j))
+					s.add(str.charAt(i));
+			}
+		}	
+		return s;
+	}
+	public static void main(String[] args) {
+		
+		String str="Engineering";
+		//Reverse by word
+		System.out.println(findVowel(str));
+		
+	}
+}
+/* [e, i]
+ */
