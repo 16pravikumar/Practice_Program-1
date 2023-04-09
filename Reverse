@@ -1,0 +1,23 @@
+package javap;
+/*Revers Number
+*/
+ 
+public class javap  {
+	
+	public static int getReve(int x) {
+		int res=0;
+		while(x>0) {
+			res=res*10+x%10;
+			//System.out.println(res);
+			x=x/10;
+		}
+		return res;
+	}
+	public static void main(String[] args) {
+		
+		int x=234;
+		System.out.println(getReve(x));
+	}
+}
+/* 432
+ */
