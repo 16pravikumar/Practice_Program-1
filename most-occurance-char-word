@@ -1,0 +1,22 @@
+package javap;
+/*Find the Permutation of the String
+*/
+public class javap  {
+	public static String mostOccuranceWordstr(String str) {
+		String s[]=str.split(" ");
+		int maxStr=0;
+		for(int i=0;i<s.length;i++) {
+			if(s[maxStr].length()<s[i].length())
+				maxStr=i;
+		}
+		return s[maxStr];
+	}
+	
+	public static void main(String args[]) {
+		String str="Once upon a time I went to Hospital.";
+		System.out.print(mostOccuranceWordstr(str));
+	}
+		
+	}
+/* Hospital.
+ */
