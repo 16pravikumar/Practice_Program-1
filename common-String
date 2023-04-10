@@ -1,0 +1,36 @@
+package javap;
+
+import java.util.*;
+import java.util.function.Consumer;
+
+/*Print the all common value from two string
+*/
+public class javap  {
+	public  static String getCommonWords(String s1,String s2) {
+		String str1[]=s1.split(" ");
+		String str2[]=s2.split(" ");
+		TreeSet<String> list=new TreeSet<>(); 
+		for(int i=0;i<str1.length;i++) {
+			for(int j=0;j<str2.length;j++) {
+				if(str1[i].equals(str2[j]))
+					list.add(str1[i]);
+			}
+		}
+		// Convert List to String using the StringJoiner
+		 StringJoiner sp=new StringJoiner(",");  
+		 list.forEach((n)->{
+			sp.add(n);
+		 });
+		 //System.out.print(sp.toString());
+		return sp.toString();
+	}
+	public static void main(String args[]) {
+		
+		String str1="My name is praveen kumar yadav";
+		String str2="My name is naveen kumar yadav";
+		System.out.print(getCommonWords(str1,str2));
+	}
+		
+	}
+/* My,is,kumar,name,yadav
+ */
